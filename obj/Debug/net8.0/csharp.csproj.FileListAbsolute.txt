@@ -1,0 +1,15 @@
+/workspaces/csharp/bin/Debug/net8.0/csharp
+/workspaces/csharp/bin/Debug/net8.0/csharp.deps.json
+/workspaces/csharp/bin/Debug/net8.0/csharp.runtimeconfig.json
+/workspaces/csharp/bin/Debug/net8.0/csharp.dll
+/workspaces/csharp/bin/Debug/net8.0/csharp.pdb
+/workspaces/csharp/obj/Debug/net8.0/csharp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/csharp/obj/Debug/net8.0/csharp.AssemblyInfoInputs.cache
+/workspaces/csharp/obj/Debug/net8.0/csharp.AssemblyInfo.cs
+/workspaces/csharp/obj/Debug/net8.0/csharp.csproj.CoreCompileInputs.cache
+/workspaces/csharp/obj/Debug/net8.0/csharp.sourcelink.json
+/workspaces/csharp/obj/Debug/net8.0/csharp.dll
+/workspaces/csharp/obj/Debug/net8.0/refint/csharp.dll
+/workspaces/csharp/obj/Debug/net8.0/csharp.pdb
+/workspaces/csharp/obj/Debug/net8.0/csharp.genruntimeconfig.cache
+/workspaces/csharp/obj/Debug/net8.0/ref/csharp.dll
