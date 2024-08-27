@@ -34,4 +34,31 @@ public class DSA
         }
         return true;
     }
+
+    public static bool CheckPermutationBySorting(string source, string target){
+        var sourceArray = source.ToCharArray();
+        var targetArray = target.ToCharArray();
+        Array.Sort(sourceArray);
+        Array.Sort(targetArray);
+
+        return string.Join("",sourceArray) ==
+        string.Join("",targetArray);
+    }
+
+    public static bool CheckPermutationByCount(string source, string target){
+        int[] count = new int[128];
+
+        for(int i=0;i<source.Length;i++){
+            count[source[i]]++;
+        }
+
+        for(int i=0;i<target.Length;i++){
+            if(count[target[i]] <= 0){
+                return false;
+            }
+            count[target[i]]--;
+        }
+        return true;
+    }
+
 }
