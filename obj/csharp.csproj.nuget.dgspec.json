@@ -1,26 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/csharp/csharp.csproj": {}
+    "c:\\Repo\\vas\\test\\csharp.csproj": {}
   },
   "projects": {
-    "/workspaces/csharp/csharp.csproj": {
+    "c:\\Repo\\vas\\test\\csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/csharp/csharp.csproj",
+        "projectUniqueName": "c:\\Repo\\vas\\test\\csharp.csproj",
         "projectName": "csharp",
-        "projectPath": "/workspaces/csharp/csharp.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/csharp/obj/",
+        "projectPath": "c:\\Repo\\vas\\test\\csharp.csproj",
+        "packagesPath": "C:\\Users\\505073150\\.nuget\\packages\\",
+        "outputPath": "c:\\Repo\\vas\\test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\505073150\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://csapps.logistics.penske.com/PLRepository/nuget": {}
         },
         "frameworks": {
           "net8.0": {
@@ -58,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

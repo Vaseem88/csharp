@@ -11,8 +11,11 @@ Console.WriteLine();
        //var isPermutation = DSA.CheckPermutationBySorting("abc","cba");
        //Console.WriteLine($"isPermutation: {isPermutation}");
        
-       var isPermutation = DSA.CheckPermutationByCount("abc","cbaaa");
-       Console.WriteLine($"isPermutation: {isPermutation}");
+//        var isPermutation = DSA.CheckPermutationByCount("abc","cbaaa");
+//        Console.WriteLine($"isPermutation: {isPermutation}");
+       
+//        var url = DSA.URLify("Mr John Smith is not good          ".ToCharArray(),25);
+//        Console.WriteLine($"url: {url}");
 
 Console.WriteLine();
        
