@@ -89,4 +89,37 @@ public class DSA
         return new string(str);
     }
 
+    public static bool isPermutationOfPalindrome(string str){
+        var table = buildCharFrequency(str);
+        var foundOdd = false;
+        foreach(var item in table){
+            if(item %2 == 1){
+                if(foundOdd){
+                    return false;
+                }
+                foundOdd = true;
+            }
+        }
+        return true;
+    }
+    public static int GetCharNumber(char c){
+        int a = (int)'a';
+        int z = (int)'z';
+        if(a <= c && c <= z)
+        {
+            return c - a;
+        }
+        return -1;
+    }
+    public static int[] buildCharFrequency(string str){
+        int[] table = new int[GetCharNumber('z') + 1];
+        foreach(var c in str){
+            var val = GetCharNumber(c);
+            if(val != -1){
+                table[val]++;
+            }            
+        }
+        return table;
+    }
+
 }
