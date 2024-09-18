@@ -17,8 +17,14 @@ Console.WriteLine();
 //        var url = DSA.URLify("Mr John Smith is not good          ".ToCharArray(),25);
 //        Console.WriteLine($"url: {url}");
 
-var isPermutationOfPalindrome = DSA.isPermutationOfPalindrome("tact cao");
-Console.WriteLine($" isPermutationOfPalindrome: {isPermutationOfPalindrome}");
+// var isPermutationOfPalindrome = DSA.isPermutationOfPalindrome("tact cao");
+// Console.WriteLine($" isPermutationOfPalindrome: {isPermutationOfPalindrome}");
+
+// var isPermutationOfPalindrome2 = DSA.IsPermutationOfPalindromeOptimized("tact coa");
+// Console.WriteLine($"isPermutationOfPalindrome2: {isPermutationOfPalindrome2}");
+
+var isPermutationOfPalindrome3 = DSA.IsPermutationOfPalindromeByBitVector("tact cao");
+Console.WriteLine($"isPermutationOfPalindrome3: {isPermutationOfPalindrome3}");
 
 Console.WriteLine();
        

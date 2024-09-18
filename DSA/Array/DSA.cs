@@ -89,6 +89,7 @@ public class DSA
         return new string(str);
     }
 
+    //1.4
     public static bool isPermutationOfPalindrome(string str){
         var table = buildCharFrequency(str);
         var foundOdd = false;
@@ -120,6 +121,57 @@ public class DSA
             }            
         }
         return table;
+    }
+
+    public static bool IsPermutationOfPalindromeOptimized(string str){
+        int[] table = new int[GetCharNumber('z') + 1];
+        int countOdd = 0;
+        foreach(var c in str){
+            var val = GetCharNumber(c);
+            if(val != -1){
+                table[val]++;
+                if(table[val] % 2 == 0){
+                    countOdd--;
+                }
+                else{
+                    countOdd++;
+                }
+            }          
+        }
+        return countOdd <= 1;
+    }
+
+    public static bool IsPermutationOfPalindromeByBitVector(string str)
+    {
+        int bitVector = CreateBitVector(str);
+        return bitVector == 0 || CheckExactlyOneBitSet(bitVector);
+    }
+
+    public static int CreateBitVector(string str){
+        int bitVector = 0;
+        foreach(var c in str){
+            int x = GetCharNumber(c);
+            bitVector = toggle(bitVector, x);
+        }
+        return bitVector;
+    }
+
+    public static int toggle(int bitVector, int index){
+        if (index < 0) return bitVector;
+
+        int mask = 1 << index;
+
+        if((bitVector & mask) == 0){
+            bitVector |= mask;
+        }
+        else{
+            bitVector &= ~mask;
+        }
+        return bitVector;
+    }
+
+    public static bool CheckExactlyOneBitSet(int bitVector){
+        return (bitVector & (bitVector - 1)) == 0;
     }
 
 }
