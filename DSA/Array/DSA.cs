@@ -174,4 +174,77 @@ public class DSA
         return (bitVector & (bitVector - 1)) == 0;
     }
 
+    //1.5
+    public static bool OneWayChange(string s1, string s2){
+        if(s1.Length == s2.Length){
+            return OneReplaceCheck(s1, s2);
+        }
+        else if(s1.Length + 1 == s2.Length){
+            return OneInsertCheck(s1, s2);
+        }
+        else if (s1.Length -1 == s2.Length){
+            return OneInsertCheck(s2, s1);
+        }
+        return false;
+    }
+
+    public static bool OneReplaceCheck(string s1, string s2){
+        var foundDifference = false;
+        for(int i=0;i<s1.Length;i++){
+            if(s1[i] != s2[i]){
+                if(foundDifference){
+                    return false;
+                }
+                foundDifference = true;
+            }
+        }
+        return true;
+    }
+    
+    public static bool OneInsertCheck(string s1, string s2){
+        int index1 = 0, index2 = 0;
+        while(index2 < s2.Length && index1 <s1.Length){
+            if(s1[index1] != s2[index2]){
+                if(index1 != index2){
+                    return false;
+                }
+                index2++;
+            }
+            else{
+                index1++;
+                index2++;
+            }
+        }
+        return true;
+    }
+
+    public static bool OneWayChange2(string s1, string s2){
+        if(Math.Abs(s1.Length - s2.Length) > 1){
+            return false;
+        }
+
+        string shortStr = s1.Length > s2.Length ? s2 : s1;
+        string longStr = s1.Length < s2.Length ? s2 : s1;
+
+        int index1 = 0, index2 = 0;
+        var foundDifference = false;
+        while(index2 < longStr.Length && index1< shortStr.Length){
+            if (longStr[index2] != shortStr[index1])
+            {
+                if(foundDifference){
+                    return false;
+                }
+                foundDifference = true;
+
+                if(shortStr.Length == longStr.Length){
+                    index1++;
+                }
+            }
+            else{
+                index1++;
+            }
+            index2++;
+        }
+        return true;
+    }
 }

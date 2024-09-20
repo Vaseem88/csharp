@@ -23,8 +23,14 @@ Console.WriteLine();
 // var isPermutationOfPalindrome2 = DSA.IsPermutationOfPalindromeOptimized("tact coa");
 // Console.WriteLine($"isPermutationOfPalindrome2: {isPermutationOfPalindrome2}");
 
-var isPermutationOfPalindrome3 = DSA.IsPermutationOfPalindromeByBitVector("tact cao");
-Console.WriteLine($"isPermutationOfPalindrome3: {isPermutationOfPalindrome3}");
+// var isPermutationOfPalindrome3 = DSA.IsPermutationOfPalindromeByBitVector("tact cao");
+// Console.WriteLine($"isPermutationOfPalindrome3: {isPermutationOfPalindrome3}");
+
+// var OneWayChange = DSA.OneWayChange("pale", "ple");
+// Console.WriteLine($"OneWayChange: {OneWayChange}");
+
+var OneWayChange2 = DSA.OneWayChange2("pale", "pale");
+Console.WriteLine($"OneWayChange2: {OneWayChange2}");
 
 Console.WriteLine();
        
